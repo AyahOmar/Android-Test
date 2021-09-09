@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gpc_background"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0.80"
+        android:background="@drawable/round_corner"
+        android:drawableStart="@drawable/ic_chat"
+        android:drawablePadding="16dp"
+        android:onClick="onChatClicked"
+        android:paddingStart="22dp"
+        android:text="@string/chat_button"
+        android:textAlignment="textStart"
+        android:textColor="@color/text"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0.80"
+        android:background="@drawable/round_corner"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:onClick="onLoginClicked"
+        android:paddingStart="22dp"
+        android:text="@string/login_button"
+        android:textAlignment="textStart"
+        android:textColor="@color/text"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0.80"
+        android:background="@drawable/round_corner"
+        android:drawableStart="@drawable/ic_animation"
+        android:drawablePadding="16dp"
+        android:onClick="onAnimationClicked"
+        android:paddingStart="22dp"
+        android:text="@string/animation_button"
+        android:textAlignment="textStart"
+        android:textColor="@color/text"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+</android.support.constraint.ConstraintLayout>
